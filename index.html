@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Trade With Munaf | Exclusive Trading Club</title>
+<title>Pankaj Bhardwaj | Stock Market Analyst</title>
 
 <script>
 !function(f,b,e,v,n,t,s)
@@ -26,146 +26,156 @@ src="https://www.facebook.com/tr?id=1404042724247050&ev=PageView&noscript=1"/>
 <style>
     body {
         margin: 0;
-        background: #050a10;
-        font-family: 'Poppins', sans-serif;
+        background: #0b1120;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         color: #fff;
         display: flex;
         justify-content: center;
         min-height: 100vh;
     }
-    .main-card {
+    .container {
         width: 100%;
-        max-width: 400px;
-        background: linear-gradient(145deg, #0f172a, #020617);
-        padding: 30px 20px;
-        text-align: center;
-        border: 1px solid rgba(255, 215, 0, 0.1);
-        box-shadow: 0 0 50px rgba(0,0,0,0.8);
+        max-width: 420px;
+        padding: 20px;
     }
-    .brand-logo {
-        width: 120px;
-        height: 120px;
+    .profile-card {
+        background: linear-gradient(180deg, #1e293b 0%, #0f172a 100%);
+        border-radius: 35px;
+        padding: 40px 25px;
+        text-align: center;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        box-shadow: 0 30px 60px rgba(0,0,0,0.5);
+    }
+    .img-box {
+        width: 140px;
+        height: 140px;
         margin: 0 auto 20px;
         position: relative;
     }
-    .brand-logo img {
+    .img-box img {
         width: 100%;
         height: 100%;
         border-radius: 50%;
-        border: 2px solid #ffd700;
-        padding: 5px;
-        box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+        object-fit: cover;
+        border: 4px solid #38bdf8;
+        padding: 4px;
     }
-    .online-badge {
+    .live-dot {
         position: absolute;
-        bottom: 10px;
-        right: 10px;
-        width: 15px;
-        height: 15px;
-        background: #00ff00;
+        bottom: 12px;
+        right: 12px;
+        width: 18px;
+        height: 18px;
+        background: #22c55e;
         border-radius: 50%;
-        border: 2px solid #000;
-        animation: blink 1s infinite;
+        border: 3px solid #1e293b;
+        animation: pulse 1.5s infinite;
     }
-    @keyframes blink { 0% {opacity: 1;} 50% {opacity: 0.3;} 100% {opacity: 1;} }
+    @keyframes pulse { 0% {transform: scale(1); opacity: 1;} 50% {transform: scale(1.2); opacity: 0.5;} 100% {transform: scale(1); opacity: 1;} }
 
-    h1 { color: #ffd700; font-size: 26px; margin-bottom: 5px; font-weight: 800; }
-    .title-tag { color: #94a3b8; font-size: 14px; margin-bottom: 25px; display: block; }
+    h1 { font-size: 26px; margin: 10px 0 5px; color: #f8fafc; font-weight: 800; letter-spacing: -0.5px; }
+    .subtitle { color: #38bdf8; font-size: 14px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; display: block; margin-bottom: 25px; }
 
-    .feature-grid {
-        background: rgba(255,255,255,0.03);
-        border-radius: 15px;
-        padding: 15px;
-        margin: 20px 0;
-        border: 1px solid rgba(255,255,255,0.05);
-    }
-    .feature-item {
+    .trust-badges {
         display: flex;
-        align-items: center;
-        gap: 10px;
-        margin-bottom: 10px;
-        font-size: 15px;
-        color: #e2e8f0;
+        justify-content: space-between;
+        margin-bottom: 25px;
+        background: rgba(255,255,255,0.03);
+        padding: 15px;
+        border-radius: 20px;
     }
-    .feature-item span { color: #ffd700; font-weight: bold; }
+    .badge-item b { display: block; font-size: 18px; color: #fff; }
+    .badge-item span { font-size: 11px; color: #94a3b8; }
 
-    .cta-button {
-        background: linear-gradient(90deg, #ffd700, #b8860b);
-        color: #000;
+    .list-area { text-align: left; margin-bottom: 30px; }
+    .list-item { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; font-size: 15px; color: #cbd5e1; }
+    .list-item span { color: #38bdf8; font-size: 18px; }
+
+    .cta-btn {
+        background: #38bdf8;
+        background: linear-gradient(90deg, #38bdf8 0%, #2563eb 100%);
+        color: #fff;
         text-decoration: none;
         display: block;
         padding: 20px;
-        border-radius: 12px;
-        font-weight: 900;
-        font-size: 20px;
-        margin-top: 25px;
-        cursor: pointer;
+        border-radius: 20px;
+        font-weight: 800;
+        font-size: 19px;
+        box-shadow: 0 10px 25px rgba(37, 99, 235, 0.4);
         border: none;
         width: 100%;
-        animation: grow 2s infinite;
-        box-shadow: 0 0 25px rgba(255, 215, 0, 0.4);
+        cursor: pointer;
+        animation: shake 3s infinite;
     }
-    @keyframes grow {
-        0% { transform: scale(1); }
-        50% { transform: scale(1.03); }
-        100% { transform: scale(1); }
+    @keyframes shake {
+        0%, 100% { transform: translateX(0); }
+        10%, 30%, 50%, 70%, 90% { transform: translateX(-2px); }
+        20%, 40%, 60%, 80% { transform: translateX(2px); }
     }
 
-    .timer-text { color: #f87171; font-weight: bold; margin-top: 15px; font-size: 13px; }
-    .footer { font-size: 10px; color: #475569; margin-top: 30px; line-height: 1.5; }
+    .timer-info { margin-top: 18px; color: #f87171; font-size: 13px; font-weight: 700; }
+    .disclaimer { font-size: 10px; color: #64748b; margin-top: 25px; line-height: 1.6; }
 </style>
 </head>
 <body>
 
-<div class="main-card">
-    <div class="brand-logo">
-        <img src="logo.png" alt="Munaf Logo">
-        <div class="online-badge"></div>
-    </div>
+<div class="container">
+    <div class="profile-card">
+        <div class="img-box">
+            <img src="logo.png" alt="Pankaj Bhardwaj">
+            <div class="live-dot"></div>
+        </div>
 
-    <h1>TRADE WITH MUNAF</h1>
-    <span class="title-tag">PREMIUM STOCK MARKET CLUB 💎</span>
+        <h1>PANKAJ BHARDWAJ</h1>
+        <span class="subtitle">Stock Market Strategist 📈</span>
 
-    <div class="feature-grid">
-        <div class="feature-item">✔️ <span>95% Accuracy</span> Intraday Calls</div>
-        <div class="feature-item">✔️ <span>Live Support</span> During Market Hours</div>
-        <div class="feature-item">✔️ <span>No Advance</span> Loss Recovery Plan</div>
-    </div>
+        <div class="trust-badges">
+            <div class="badge-item"><b>98%</b><span>Accuracy</span></div>
+            <div class="badge-item"><b>8+ Yrs</b><span>Experience</span></div>
+            <div class="badge-item"><b>Daily</b><span>Profit Calls</span></div>
+        </div>
 
-    <button class="cta-button" onclick="handleJoin()">
-        JOIN TELEGRAM VIP 🚀
-    </button>
+        <div class="list-area">
+            <div class="list-item"><span>✦</span> Nifty & Bank Nifty Expert</div>
+            <div class="list-item"><span>✦</span> Zero-Hero Expiry Specials</div>
+            <div class="list-item"><span>✦</span> Full Support During Market</div>
+        </div>
 
-    <div class="timer-text" id="timer">Offer expiring in 15 seconds...</div>
+        <button class="cta-btn" onclick="startRedirect()">
+            JOIN FREE TELEGRAM NOW
+        </button>
 
-    <div class="footer">
-        NOT SEBI REGISTERED. For educational purposes only. Market investments are subject to risk.
+        <div class="timer-info" id="timer">Offer expires in 15 seconds...</div>
+
+        <div class="disclaimer">
+            IMPORTANT: We are not SEBI Registered. Trading involves high risk. This channel is for educational purposes only.
+        </div>
     </div>
 </div>
 
 <script>
-    let seconds = 15;
-    let redirected = false;
-    const tgLink = "https://t.me/+mLSwdmn2AvBkN2Jl";
+    let timer = 15;
+    let isDone = false;
+    const finalLink = "https://t.me/+mLSwdmn2AvBkN2Jl";
 
-    function handleJoin() {
-        if (!redirected) {
-            redirected = true;
-            // FIX: Sending Value & Currency to remove Meta Errors
+    function startRedirect() {
+        if (!isDone) {
+            isDone = true;
+            // META PIXEL ERROR FIX: Added Value & Currency
             fbq('track', 'Lead', {
                 value: 1.00,
                 currency: 'INR'
             });
-            window.location.replace(tgLink);
+            window.location.replace(finalLink);
         }
     }
 
-    const timerInt = setInterval(() => {
-        seconds--;
-        document.getElementById('timer').innerText = `Offer expiring in ${seconds} seconds...`;
-        if (seconds <= 0) {
-            clearInterval(timerInt);
-            handleJoin();
+    const counter = setInterval(() => {
+        timer--;
+        document.getElementById('timer').innerText = `Offer expires in ${timer} seconds...`;
+        if (timer <= 0) {
+            clearInterval(counter);
+            startRedirect();
         }
     }, 1000);
 </script>
