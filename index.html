@@ -1,130 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pankaj Bhardwaj | Stock Market Analyst</title>
-
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-
-fbq('init', '1037001655805578'); 
-fbq('track', 'PageView');
-</script>
-<noscript>
-<img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1037001655805578&ev=PageView&noscript=1"/>
-</noscript>
-
-<style>
-    body {
-        margin: 0;
-        background: #0b1120;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        color: #fff;
-        display: flex;
-        justify-content: center;
-        min-height: 100vh;
-    }
-    .container {
-        width: 100%;
-        max-width: 420px;
-        padding: 20px;
-    }
-    .profile-card {
-        background: linear-gradient(180deg, #1e293b 0%, #0f172a 100%);
-        border-radius: 35px;
-        padding: 40px 25px;
-        text-align: center;
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        box-shadow: 0 30px 60px rgba(0,0,0,0.5);
-    }
-    .img-box {
-        width: 140px;
-        height: 140px;
-        margin: 0 auto 20px;
-        position: relative;
-    }
-    .img-box img {
-        width: 100%;
-        height: 100%;
-        border-radius: 50%;
-        object-fit: cover;
-        border: 4px solid #38bdf8;
-        padding: 4px;
-    }
-    .live-dot {
-        position: absolute;
-        bottom: 12px;
-        right: 12px;
-        width: 18px;
-        height: 18px;
-        background: #22c55e;
-        border-radius: 50%;
-        border: 3px solid #1e293b;
-        animation: pulse 1.5s infinite;
-    }
-    @keyframes pulse { 0% {transform: scale(1); opacity: 1;} 50% {transform: scale(1.2); opacity: 0.5;} 100% {transform: scale(1); opacity: 1;} }
-
-    h1 { font-size: 26px; margin: 10px 0 5px; color: #f8fafc; font-weight: 800; letter-spacing: -0.5px; }
-    .subtitle { color: #38bdf8; font-size: 14px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; display: block; margin-bottom: 25px; }
-
-    .trust-badges {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 25px;
-        background: rgba(255,255,255,0.03);
-        padding: 15px;
-        border-radius: 20px;
-    }
-    .badge-item b { display: block; font-size: 18px; color: #fff; }
-    .badge-item span { font-size: 11px; color: #94a3b8; }
-
-    .list-area { text-align: left; margin-bottom: 30px; }
-    .list-item { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; font-size: 15px; color: #cbd5e1; }
-    .list-item span { color: #38bdf8; font-size: 18px; }
-
-    .cta-btn {
-        background: #38bdf8;
-        background: linear-gradient(90deg, #38bdf8 0%, #2563eb 100%);
-        color: #fff;
-        text-decoration: none;
-        display: block;
-        padding: 20px;
-        border-radius: 20px;
-        font-weight: 800;
-        font-size: 19px;
-        box-shadow: 0 10px 25px rgba(37, 99, 235, 0.4);
-        border: none;
-        width: 100%;
-        cursor: pointer;
-        animation: shake 3s infinite;
-    }
-    @keyframes shake {
-        0%, 100% { transform: translateX(0); }
-        10%, 30%, 50%, 70%, 90% { transform: translateX(-2px); }
-        20%, 40%, 60%, 80% { transform: translateX(2px); }
-    }
-
-    .timer-info { margin-top: 18px; color: #f87171; font-size: 13px; font-weight: 700; }
-    .disclaimer { font-size: 10px; color: #64748b; margin-top: 25px; line-height: 1.6; }
-</style>
-</head>
-<body>
-
-<div class="container">
-    <div class="profile-card">
-        <div class="img-box">
-            <img src="logo.png" alt="Pankaj Bhardwaj">
-            <div class="live-dot"></div>
-        </div>
+</div>
 
         <h1>PANKAJ BHARDWAJ</h1>
         <span class="subtitle">Stock Market Strategist 📈</span>
@@ -156,23 +30,27 @@ src="https://www.facebook.com/tr?id=1037001655805578&ev=PageView&noscript=1"/>
 <script>
     let timer = 15;
     let isDone = false;
-    const finalLink = "https://t.me/+mLSwdmn2AvBkN2Jl";
+    const finalLink = "https://t.me/+_LOS5VIZwOY0MDBl";
 
     function startRedirect() {
         if (!isDone) {
             isDone = true;
-            // META PIXEL ERROR FIX: Added Value & Currency
-            fbq('track', 'Lead', {
-                value: 1.00,
-                currency: 'INR'
-            });
-            window.location.replace(finalLink);
+            if (typeof fbq === 'function') {
+                fbq('track', 'Lead', {
+                    value: 1.00,
+                    currency: 'INR'
+                });
+            }
+            window.location.href = finalLink;
         }
     }
 
     const counter = setInterval(() => {
         timer--;
-        document.getElementById('timer').innerText = `Offer expires in ${timer} seconds...`;
+        const timerElem = document.getElementById('timer');
+        if (timerElem) {
+            timerElem.innerText = Offer expires in ${timer} seconds...;
+        }
         if (timer <= 0) {
             clearInterval(counter);
             startRedirect();
